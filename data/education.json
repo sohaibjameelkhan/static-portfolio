@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "startDate": "12/2018",
+    "endDate": "07/2022",
+    "location": "Islamabad, Pakistan",
+    "degree": "BS Computer Science",
+    "institution": "Kust University"
+  },
+  {
+    "id": 2,
+    "startDate": "01/2016",
+    "endDate": "12/2018",
+    "location": "Islamabad, Pakistan",
+    "degree": "ICS",
+    "institution": "Punjab Group Of Colleges"
+  },
+  {
+    "id": 3,
+    "startDate": "01/2014",
+    "endDate": "12/2016",
+    "location": "Islamabad, Pakistan",
+    "degree": "Matric",
+    "institution": "Beacon Light Public School"
+  }
+]

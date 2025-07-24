@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "startDate": "01/2023",
+    "endDate": "Present",
+    "location": "Islamabad, Pakistan",
+    "position": "Senior Mobile Application Developer (Flutter)",
+    "company": "SoftLinks FZCO",
+    "description": "A software development company focusing on mobile applications",
+    "achievements": [
+      "Led the development of 6+ Flutter apps from scratch, resulting in a 30% reduction in project delivery time",
+      "Optimized app performance by 40% by optimizing code and implementing efficient state management",
+      "Collaborated with backend and design teams to deploy features used by over 50,000+ active users",
+      "Ensured 100% on-time deployment to Play Store and App Store with zero rollback incidents"
+    ]
+  },
+  {
+    "id": 2,
+    "startDate": "08/2022",
+    "endDate": "12/2022",
+    "location": "Islamabad, Pakistan",
+    "position": "Flutter Developer",
+    "company": "Techozon Software House",
+    "description": "A software house specializing in Flutter application development",
+    "achievements": [
+      "Conducted weekly code reviews and reduced bugs by 40%",
+      "Developed 4+ Flutter applications with responsive UIs in coordination with UI/UX teams, enhancing user retention by 25%",
+      "Implemented RESTful API integration that decreased app load time by 1.5 seconds"
+    ]
+  },
+  {
+    "id": 3,
+    "startDate": "01/2022",
+    "endDate": "07/2022",
+    "location": "Islamabad, Pakistan",
+    "position": "Flutter Developer",
+    "company": "Infusible Coders",
+    "description": "A software house known for developing innovative mobile solutions",
+    "achievements": [
+      "Maintained and optimized 3+ legacy apps, increasing performance efficiency by 35%",
+      "Refactored modular architecture for improved scalability and developer onboarding",
+      "Managed version control and deployment cycles with 98% build success rate"
+    ]
+  },
+  {
+    "id": 4,
+    "startDate": "02/2020",
+    "endDate": "12/2023",
+    "location": "Remote",
+    "position": "Flutter Developer",
+    "company": "Fiverr (Freelance)",
+    "description": "A freelancing platform connecting buyers and sellers of services",
+    "achievements": [
+      "Delivered 20+ custom mobile solutions for international clients, achieving a 5-star rating on 90%+ orders",
+      "Integrated third-party APIs including payment gateways and Firebase services",
+      "Enhanced client delivery timelines by 20% through reusable code components"
+    ]
+  }
+]

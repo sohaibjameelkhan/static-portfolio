@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "category": "Mobile Development",
+    "items": ["Flutter", "Dart", "Kotlin", "Swift", "SwiftUI", "Android Studio", "Xcode", "Android App Development", "iOS App Development"]
+  },
+  {
+    "id": 2,
+    "category": "Development Tools",
+    "items": ["GitHub", "Visual Studio Code", "Git", "Postman", "Figma"]
+  },
+  {
+    "id": 3,
+    "category": "Backend & APIs",
+    "items": ["REST APIs", "Google Firebase", "AWS", "Azure", "JSON", "SQLite", "Provider"]
+  },
+  {
+    "id": 4,
+    "category": "Integration & Services",
+    "items": ["Google API", "Payment Gateways", "Stripe", "Deep Linking", "Multi-language Support", "App Deployment", "Jetpack", "Retrofit", "WEBRTC"]
+  }
+]

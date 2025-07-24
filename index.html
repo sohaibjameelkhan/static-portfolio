@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Sohaib Jameel - Senior Mobile Application Developer</title>
+    <meta name="description" content="Senior Mobile Application Developer with 4+ years of experience in Flutter, Dart, iOS, and Android development. View my portfolio and projects.">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Muhammad Sohaib Jameel - Senior Mobile Application Developer">
+    <meta property="og:description" content="Senior Mobile Application Developer with 4+ years of experience in Flutter, Dart, iOS, and Android development.">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark': 'hsl(210, 15%, 9%)',
+                        'dark-light': 'hsl(210, 10%, 23%)',
+                        'gray-medium': 'hsl(210, 6%, 42%)',
+                        'gray-light': 'hsl(210, 17%, 98%)',
+                        'primary': 'hsl(221, 83%, 53%)',
+                        'secondary': 'hsl(38, 92%, 50%)',
+                        'accent': 'hsl(142, 76%, 36%)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="font-sans antialiased bg-white text-foreground">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg overflow-hidden">
+                        <img 
+                            src="attached_assets/IMG_5708_1753363998360.PNG" 
+                            alt="Muhammad Sohaib Jameel"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                    <span class="text-xl font-bold text-dark">Muhammad Sohaib</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <button 
+                        onclick="scrollToSection('about')" 
+                        class="text-gray-medium hover:text-primary transition-colors"
+                    >
+                        About
+                    </button>
+                    <button 
+                        onclick="scrollToSection('experience')" 
+                        class="text-gray-medium hover:text-primary transition-colors"
+                    >
+                        Experience
+                    </button>
+                    <button 
+                        onclick="scrollToSection('projects')" 
+                        class="text-gray-medium hover:text-primary transition-colors"
+                    >
+                        Projects
+                    </button>
+                    <button 
+                        onclick="scrollToSection('skills')" 
+                        class="text-gray-medium hover:text-primary transition-colors"
+                    >
+                        Skills
+                    </button>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-4">
+                    <button 
+                        onclick="scrollToSection('contact')"
+                        class="bg-primary text-white hover:bg-blue-700 inline-flex items-center space-x-2 px-4 py-2 rounded-md transition-colors"
+                    >
+                        <i data-lucide="mail" class="w-4 h-4"></i>
+                        <span>Contact Me</span>
+                    </button>
+                </div>
+
+                <div class="md:hidden">
+                    <button
+                        id="mobile-menu-button"
+                        class="p-2 rounded-md hover:bg-gray-100 transition-colors"
+                    >
+                        <i data-lucide="menu" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-200">
+                <div class="flex flex-col space-y-4">
+                    <button 
+                        onclick="scrollToSection('about')" 
+                        class="text-left text-gray-medium hover:text-primary transition-colors"
+                    >
+                        About
+                    </button>
+                    <button 
+                        onclick="scrollToSection('experience')" 
+                        class="text-left text-gray-medium hover:text-primary transition-colors"
+                    >
+                        Experience
+                    </button>
+                    <button 
+                        onclick="scrollToSection('projects')" 
+                        class="text-left text-gray-medium hover:text-primary transition-colors"
+                    >
+                        Projects
+                    </button>
+                    <button 
+                        onclick="scrollToSection('skills')" 
+                        class="text-left text-gray-medium hover:text-primary transition-colors"
+                    >
+                        Skills
+                    </button>
+                    <button 
+                        onclick="scrollToSection('contact')"
+                        class="bg-primary text-white hover:bg-blue-700 w-full inline-flex items-center justify-center space-x-2 px-4 py-2 rounded-md transition-colors"
+                    >
+                        <i data-lucide="mail" class="w-4 h-4"></i>
+                        <span>Contact Me</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-primary/5 to-accent/5 py-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <div class="mb-8">
+                        <div class="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg border-4 border-white">
+                            <img 
+                                src="attached_assets/IMG_5708_1753363998360.PNG" 
+                                alt="Muhammad Sohaib Jameel"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+                    <h1 id="hero-name" class="text-5xl font-bold text-dark mb-4">Loading...</h1>
+                    <h2 id="hero-title" class="text-2xl text-primary mb-6">Loading...</h2>
+                    <p id="hero-summary" class="text-lg text-gray-medium max-w-4xl mx-auto leading-relaxed mb-8">
+                        Loading...
+                    </p>
+                    
+                    <div class="flex flex-wrap justify-center items-center gap-6 mb-8">
+                        <div class="flex items-center space-x-2 text-gray-medium">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <span id="hero-location">Loading...</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-gray-medium">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                            <a id="hero-email-link" href="#" class="hover:text-primary transition-colors">
+                                <span id="hero-email">Loading...</span>
+                            </a>
+                        </div>
+                        <div class="flex items-center space-x-2 text-gray-medium">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            <a id="hero-phone-link" href="#" class="hover:text-primary transition-colors">
+                                <span id="hero-phone">Loading...</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-center items-center gap-4">
+                        <a id="hero-linkedin" href="#" target="_blank" rel="noopener noreferrer"
+                           class="bg-primary hover:bg-blue-700 text-white inline-flex items-center space-x-2 px-4 py-2 rounded-md transition-colors">
+                            <i data-lucide="linkedin" class="w-4 h-4"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        
+                        <a id="hero-github" href="#" target="_blank" rel="noopener noreferrer"
+                           class="border-primary text-primary hover:bg-primary hover:text-white border inline-flex items-center space-x-2 px-4 py-2 rounded-md transition-colors">
+                            <i data-lucide="github" class="w-4 h-4"></i>
+                            <span>GitHub</span>
+                        </a>
+                        
+                        <a href="attached_assets/MuhammadSohaibJameelResume (18)_1753340523933.pdf" 
+                           download="Muhammad_Sohaib_Jameel_Resume.pdf"
+                           target="_blank" rel="noopener noreferrer"
+                           class="border-accent text-accent hover:bg-accent hover:text-white border inline-flex items-center space-x-2 px-4 py-2 rounded-md transition-colors">
+                            <i data-lucide="download" class="w-4 h-4"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-dark mb-4">About Me</h2>
+                    <p class="text-lg text-gray-medium max-w-3xl mx-auto">
+                        I'm a passionate mobile developer dedicated to creating exceptional user experiences 
+                        through innovative Flutter applications. With a strong foundation in computer science 
+                        and hands-on experience across diverse projects, I bring both technical expertise 
+                        and creative problem-solving to every challenge.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-primary">4+</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-dark mb-2">Years Experience</h3>
+                        <p class="text-gray-medium">Professional mobile development across multiple platforms</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-accent">20+</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-dark mb-2">Apps Delivered</h3>
+                        <p class="text-gray-medium">Successfully launched applications serving thousands of users</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-secondary">98%</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-dark mb-2">Success Rate</h3>
+                        <p class="text-gray-medium">On-time delivery with zero rollback incidents</p>
+                    </div>
+                </div>
+                
+                <!-- Education -->
+                <div id="education-section" class="mt-16">
+                    <h3 class="text-2xl font-bold text-dark text-center mb-8">Education</h3>
+                    <div id="education-list" class="space-y-4">
+                        <!-- Education items will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-dark mb-4">Professional Experience</h2>
+                    <p class="text-lg text-gray-medium">
+                        Over 4 years of mobile development experience across various industries
+                    </p>
+                </div>
+                
+                <div id="experience-timeline" class="space-y-8">
+                    <!-- Experience items will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-dark mb-4">Featured Projects</h2>
+                    <p class="text-lg text-gray-medium">
+                        Mobile applications that have made a real impact for users and businesses
+                    </p>
+                </div>
+                
+                <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project items will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-dark mb-4">Technical Skills</h2>
+                    <p class="text-lg text-gray-medium">
+                        Technologies and tools I work with to build exceptional mobile applications
+                    </p>
+                </div>
+                
+                <div id="skills-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Skills items will be loaded here -->
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <div class="bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl p-8">
+                        <h3 class="text-xl font-bold text-dark mb-4">Professional Highlights</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-primary mb-2">4+</div>
+                                <div class="text-gray-medium">Years Experience</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-accent mb-2">20+</div>
+                                <div class="text-gray-medium">Apps Delivered</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-secondary mb-2">50K+</div>
+                                <div class="text-gray-medium">Active Users</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white dark:bg-gray-900">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-400">Let's work together</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
+                                    <i data-lucide="mail" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Email</p>
+                                    <a id="contact-email" href="#" class="text-blue-600 dark:text-blue-400 hover:underline">Loading...</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
+                                    <i data-lucide="phone" class="w-5 h-5 text-green-600 dark:text-green-400"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Phone</p>
+                                    <a id="contact-phone" href="#" class="text-green-600 dark:text-green-400 hover:underline">Loading...</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-10 h-10 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center">
+                                    <i data-lucide="map-pin" class="w-5 h-5 text-purple-600 dark:text-purple-400"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Location</p>
+                                    <p id="contact-location" class="text-gray-600 dark:text-gray-400">Loading...</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="text-lg font-medium mb-4">Find me online</h4>
+                            <div class="flex space-x-4">
+                                <a id="contact-linkedin" href="#" target="_blank" class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors">
+                                    <i data-lucide="linkedin" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+                                </a>
+                                <a id="contact-github" href="#" target="_blank" class="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                                    <i data-lucide="github" class="w-6 h-6 text-gray-600 dark:text-gray-400"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Send a Message</h3>
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white"></textarea>
+                            </div>
+                            <button type="submit" class="w-full btn-primary">
+                                <i data-lucide="send" class="w-4 h-4"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-dark mb-4">Get In Touch</h2>
+                    <p class="text-lg text-gray-600">
+                        Ready to discuss your next mobile app project? Let's connect and build something amazing together.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                    <i data-lucide="mail" class="text-blue-600 w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm font-medium">Email</p>
+                                    <a href="mailto:sohaibjameel3@gmail.com" class="text-gray-900 hover:text-blue-600 transition-colors font-medium">
+                                        sohaibjameel3@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                                    <i data-lucide="phone" class="text-green-600 w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm font-medium">Phone</p>
+                                    <a href="tel:+923115244602" class="text-gray-900 hover:text-green-600 transition-colors font-medium">
+                                        +92 311 5244602
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                                    <i data-lucide="linkedin" class="text-blue-600 w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm font-medium">LinkedIn</p>
+                                    <a href="https://linkedin.com/in/sohaibjameel" 
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="text-gray-900 hover:text-blue-600 transition-colors font-medium">
+                                        View Profile
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+                                    <i data-lucide="github" class="text-gray-700 w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-500 text-sm font-medium">GitHub</p>
+                                    <a href="https://github.com/sohaibjameelkhan" 
+                                       target="_blank" rel="noopener noreferrer"
+                                       class="text-gray-900 hover:text-gray-700 transition-colors font-medium">
+                                        View Projects
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Send a Message</h3>
+                        
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    required 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                    placeholder="Your full name"
+                                />
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                    placeholder="your.email@example.com"
+                                />
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    required 
+                                    rows="5"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                    placeholder="Tell me about your project..."
+                                ></textarea>
+                            </div>
+                            
+                            <button 
+                                type="submit" 
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center space-x-2"
+                            >
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-300 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold">MS</span>
+                        </div>
+                        <span class="text-lg font-bold text-white">Muhammad Sohaib</span>
+                    </div>
+                    <p class="text-sm">Senior Mobile Application Developer specializing in Flutter, Dart, and cross-platform solutions.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-medium mb-3">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Mobile App Development</li>
+                        <li>Flutter & Dart</li>
+                        <li>iOS & Android</li>
+                        <li>API Integration</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-medium mb-3">Technologies</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Flutter & Dart</li>
+                        <li>Swift & SwiftUI</li>
+                        <li>Kotlin & Java</li>
+                        <li>Firebase & AWS</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2024 Muhammad Sohaib Jameel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
